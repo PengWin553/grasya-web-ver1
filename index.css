@@ -14,7 +14,7 @@
 
 .main-container {
     max-width: 375px;
-    background: rgb(216, 70, 70);
+    background: #AB3428;
     margin: 0 auto;
     height: 100vh;
 }
@@ -50,6 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #283233;
 }
 
 .btn-support{
@@ -62,7 +63,11 @@
     border-radius: 5px;
     cursor: pointer;
     display: inline-block;
-    
+    color: #283233;
+}
+
+.btn-support:hover{
+    background: #a3e3e7;
 }
 
 .btn-play-icon {
@@ -79,7 +84,10 @@
 
 .support{
     background: red;
-    margin-top: 10em;
+    margin-top: 16.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* SLIDER STYLINGS */
@@ -107,9 +115,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 10em;
+    margin-top: -4em;
 }
 
 .wrapper i.button {
@@ -118,7 +126,7 @@
     transform: translateY(-50%);
     height: 36px;
     width: 36px;
-    background-color: #343f4f;
+    background-color: #283233;
     border-radius: 50%;
     text-align: center;
     line-height: 36px;
