@@ -6,11 +6,13 @@
     <title>Grasya Website</title>
     <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="script.js" defer></script>
 </head>
 <body class="main-body">
 
     <!-- MAIN -->
-    <main class="main-container">
+    <main class="main-container" style="display: flex; flex-direction: column;">
         <section class="hero-section">
             <div class="hero-top">
                 <img src="./images/eye of the moon.png" alt="hero top image" class="hero-top-img">
@@ -18,10 +20,29 @@
             
             <div class="hero-bottom">
                 <img src="./images/1.png" alt="hero bottom image" class="hero-bottom-img">
-                <button class="btn-play"> <i class='bx bx-play-circle btn-play-icon'></i> <span> Run Game </span></button>
+                <button class="btn-play"> <i class='bx bx-play-circle btn-play-icon'></i> <span class="run-game"> Run Game </span></button>
+            </div>
+        </section>
+
+        <section class="support">
+            <button class="btn-support">Support this game</button>
+        </section>
+       
+
+        <section class="wrapper">
+            <i class="fa-solid fa-arrow-left button" id="prev"></i>
+            <div class="image-container">
+              <div class="carousel">
+                <img class="carousel-img" src="images/1.png" alt="slider image 1" />
+                <img class="carousel-img" src="images/2.jpg" alt="slider image 2" />
+                <img class="carousel-img" src="images/3.png" alt="slider image 3" />
+                <img class="carousel-img" src="images/desc.png" alt="slider image 4" />
+              </div>
+              <i class="fa-solid fa-arrow-right button" id="next"></i>
             </div>
         </section>
     </main>
+
 
     <!-- FOOTER -->
     <footer>
