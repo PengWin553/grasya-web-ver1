@@ -16,9 +16,11 @@
 
 .main-container {
     max-width: 375px;
-    background: #AB3428;
+    background: #ffd786;
     margin: 0 auto;
-    height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-top-img {
@@ -93,11 +95,6 @@
 }
 
 /* SLIDER STYLINGS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .wrapper {
     display: flex;
@@ -114,11 +111,11 @@
 
 .wrapper i.button {
     position: absolute;
-    top: 50%;
+    top: 90%;
     transform: translateY(-50%);
     height: 36px;
     width: 36px;
-    background-color:#283233;
+    background-color:#ee7f00;
     border-radius: 50%;
     text-align: center;
     line-height: 36px;
@@ -127,6 +124,10 @@
     transition: all 0.3s linear;
     z-index: 100;
     cursor: pointer;
+}
+
+.wrapper i.button:hover{
+    background-color:#fea238;
 }
 
 i.button:active {
@@ -158,8 +159,38 @@ i#next {
 .carousel img {
     height: 100%;
     width: 100%;
-    border-radius: 18px;
-    border: 10px solid #fff;
+    border-radius: 10px;
+    border: 5px solid #fff;
     object-fit: cover;
 }
 
+.brief-info-one{
+    /* background: pink; */
+    color: #392302;
+}
+
+.paragraph{
+    font-size: 12px;
+    padding: 15px;
+}
+
+/* brief info one stylings */
+
+.about-game-img-text{
+    width: 100%; 
+    height: 100px;
+    padding: 0.4em; 
+    object-fit: cover;
+}
+
+.list-of-features{
+    /* background: pink; */
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.features{
+    margin-top: 10px;
+    padding-left: 15px;
+    font-size: 12px;
+}
